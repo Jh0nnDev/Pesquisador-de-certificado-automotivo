@@ -1,0 +1,35 @@
+.formbox{
+    display: inline-block;
+    
+    padding:18px 20px;
+    margin-top: 30%;
+    margin-left: 43%;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    border-radius: 15px;
+}
+label{
+    font-family:Monospace;
+    font-size: 15px;
+    color: aliceblue;
+}
+#nametextbox{
+    margin-bottom: 10px;
+}
+.checklist{
+    margin: 10px;
+}
+
+#ButtomOk{
+    text-decoration: none;
+    font-size: Monospace;
+    font-size: 20px;
+    width:60px ;
+    height:40px ;
+    background-color: green;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+#ButtomOk.hover{
+    background-color: rgb(63, 223, 63);
+}
