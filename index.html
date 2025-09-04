@@ -5,22 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certified Researcher</title>
     <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <p id="demo"> </p>
     <div class="formbox">
-        <form>
+        <form id="form" action="">
             <label for="Digite o Número do Carro" id="nametextbox">Digite o Número do Carro:</label><br>
-            <input type="text" name="Numero de ordem" maxlength="4" required><br>
+            <input id="NumbOrd" type="text" name="NumbCar" maxlength="4" required><br>
             <div class="checklist">
-                <input type="radio" id="CRLV" name="certif" value="crlv">
+                <input type="radio" id="CRLV" name="certif" value="crlv" required>
                 <label for="crlv">CRLV</label>
-                <input type="radio" id="TCO" name="certif" value="tco">
+                <input type="radio" id="TCO" name="certif" value="tco" required>
                 <label for="tco">TCO</label><br>
             </div>
-            <input id="ButtomOk" type="submit" value="Ok">
+            <input id="Button" type="submit" value="Enviar">
 
         </form>
     </div>
+
+
+    
 </body>
 </html>
