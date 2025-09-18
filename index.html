@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -8,21 +8,38 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <p id="demo"> </p>
-    <div class="formbox">
-        <form id="form" action="">
-            <label for="Digite o Número do Carro" id="nametextbox">Digite o Número do Carro:</label><br>
-            <input id="NumbOrd" type="text" name="NumbCar" maxlength="4" required><br>
-            <div class="checklist">
-                <input type="radio" id="CRLV" name="certif" value="crlv" required>
-                <label for="crlv">CRLV</label>
-                <input type="radio" id="TCO" name="certif" value="tco" required>
-                <label for="tco">TCO</label><br>
-            </div>
-            <input id="Button" type="submit" value="Enviar">
 
-        </form>
-    </div>
+<nav class="nav">
+
+	<div class="navbar-header">
+		<span id="navtext" >Sistema Expresso</span>
+
+	</div>
+
+</nav>
+
+<div class="formbox">
+		<div class="form-title">
+			<form id="form" action="">
+			<h2>Pesquisador de certificados</h2>
+		</div>
+
+		<label for="Digite o Número do Carro" id="nametextbox">Digite o Número do Carro:</label><br>
+		<input id="NumbOrd" type="text" name="NumbCar" maxlength="4"><br>
+		
+	<div class="checklist">
+
+		<input type="radio" id="TCO" name="certif" value="tco" checked>
+		<label for="tco">TCO</label>
+		<input type="radio" id="CRLV" name="certif" value="crlv" >
+		<label for="crlv">CRLV</label>
+
+	</div id="borderbutton">
+
+	<button id="Button" type="submit" value="Enviar">Enviar</button>
+	
+	</form>
+</div>
 
 
     
