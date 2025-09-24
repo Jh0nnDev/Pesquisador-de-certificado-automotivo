@@ -9,16 +9,34 @@ bnt.addEventListener("click", function (e)
     const Numero = document.querySelector("#NumbOrd");
     const Carro = Numero.value;
     //armazena o valor do numero de ordem na variavel "carro" 
+    
+    
+    if(document.querySelector("#NumbOrd").value == ""){
+        alert('Por favor, coloque o numero do carro');
+        document.querySelector("#NumbOrd").focus();
+        return false;
+    }
+    //valida se o input "carro" está vazio
+
+    if(document.querySelector("#NumbOrd").value.length < 4){
+        alert('o número do carro deve ter 4 caracteres');
+        document.querySelector("#NumbOrd").focus();
+        return false;
+    }
+    //valida se o input "carro" tem 4 caracteres
+
 
     let opc1 = document.getElementById("CRLV")
     const CRLV = opc1.value;
+
     let opc2 = document.getElementById("TCO")
     const TCO = opc2.value;
+
     if(opc1.checked) 
         window.open("https://expvitoria.com/certificados/" + CRLV + "/" + Carro + ".pdf" , '_blank');
         else if(opc2.checked) 
             window.open("https://expvitoria.com/certificados/" + TCO + "/" + Carro + ".pdf"  , '_blank');
-            else alert("Marca alguma ai corno")
+            else alert("Você deve marcar alguma opção")
 
     
 })
