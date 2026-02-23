@@ -33,9 +33,9 @@ bnt.addEventListener("click", function (e)
     const TCO = opc2.value;
 
     if(opc1.checked) 
-        window.open("https://expvitoria.com/certificados/" + CRLV + "/" + Carro + ".pdf" , '_blank');
+        window.open("https://expvitoria.site/certificados/" + CRLV + "/" + Carro + ".pdf" , '_blank');
         else if(opc2.checked) 
-            window.open("https://expvitoria.com/certificados/" + TCO + "/" + Carro + ".pdf"  , '_blank');
+            window.open("https://expvitoria.site/certificados/" + TCO + "/" + Carro + ".pdf"  , '_blank');
             else alert("Você deve marcar alguma opção")
 
     
