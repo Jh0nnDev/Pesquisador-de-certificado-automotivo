@@ -18,7 +18,7 @@ bnt.addEventListener("click", function (e)
     }
     //valida se o input "carro" está vazio
 
-    if(document.querySelector("#NumbOrd").value.length < 4){
+    if(document.querySelector("#NumbOrd").value.length < 3){
         alert('o número do carro deve ter 4 caracteres');
         document.querySelector("#NumbOrd").focus();
         return false;
