@@ -41,4 +41,4 @@ bnt.addEventListener("click", function (e)
     
 })
 
-
+console.log("script carregado")
